@@ -1,0 +1,10 @@
+<h2> Fix Guac Ingredient </h2>
+<%= form_for [@recipe,@ingredient] do |f| %>
+<%= f.label :name %>
+<%= f.text_field :name %>
+<%= f.submit "Edit" %>
+<% end %>
+
+<%= form_for [@recipe,@ingredient], method: :delete do |f| %>
+  <%= f.submit "Delete!" %>
+<% end %>

@@ -1,0 +1,10 @@
+<h2> Fixup Guac Recipe </h2>
+<%= form_for [@recipe] do |f| %>
+<%= f.label :name %>
+<%= f.text_field :name %>
+<%= f.submit "Edit" %>
+<% end %>
+
+<%= form_for @recipe, method: :delete do |f| %>
+  <%= f.submit "Delete!" %>
+<% end %>

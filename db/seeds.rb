@@ -16,8 +16,8 @@ classic = Recipe.create!(name: "Classic",img_url: "", detail:"")
 bougie = Ingredient.create!(name: "Bougie", img_url:"https://greatist.com/sites/default/files/styles/article_main/public/8.%20Spicy%20Apple%20Guacamole.jpg?itok=L4B5IW7-",detail:"")
 bougie = Recipe.create!(name: "Bougie",img_url: "", detail:"")
 
-tropicana = Ingredient.create!(name: "Torpicana", img_url:"https://greatist.com/sites/default/files/styles/article_main/public/6.%20Tropical%20Fruit%20Guacamole.jpeg?itok=jQGSAvbu",detail:"")
-tropocana = Recipe.create!(name: "Tropicana",img_url: "", detail:"")
+tropicana = Ingredient.create!(name: "Tropicana", img_url:"https://greatist.com/sites/default/files/styles/article_main/public/6.%20Tropical%20Fruit%20Guacamole.jpeg?itok=jQGSAvbu",detail:"")
+tropicana = Recipe.create!(name: "Tropicana",img_url: "", detail:"")
 
 pomi = Ingredient.create!(name: "Pomi", img_url:"https://greatist.com/sites/default/files/styles/article_main/public/10.%20Pomegranate%20Guacamole.jpg?itok=9KvmRoyt",detail:"")
 pomi = Recipe.create!(name: "Pomi",img_url: "", detail:"")
@@ -50,4 +50,4 @@ yogurty = Ingredient.create!(name: "Yogurty", img_url:"https://greatist.com/site
 yogurty = Recipe.create!(name: "Yogurty",img_url: "", detail:"")
 
 spicy = Ingredient.create!(name: "Spicy", img_url:"https://greatist.com/sites/default/files/styles/article_main/public/19.%20Spicy%20Cheddar%20Cheese%20Guacamole.jpg?itok=MBvZ4KWB",detail:"")
-spicy = Recipe.create!(name: "",img_url: "", detail:"")
+spicy = Recipe.create!(name: "Spicy",img_url: "", detail:"")
