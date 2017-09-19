@@ -21,7 +21,7 @@ def create
 end
 
 def show
-  @ingredient = Ingredient.find([:id])
+  @ingredient = Ingredient.all
 end
 
 def update

@@ -1,14 +1,14 @@
 
 <h2>recipe: <%= link_to "(Edit)" , edit_recipe_path(@recipe) %><%= link_to "(Delete)" , edit_recipe_path(@recipe) %></h2>
 <h1><%= @recipe.name %></h1>
-<h2><%= @recipe.name %></h2>
-<img src="<%= @recipe.img_url %>">
+
+<img src="<%= @recipe.img_url %>"/>
 
 <h2>Ingredient: <%= link_to "(Add)" , new_recipe_ingredient_path(@recipe) %></h2>
     <ul>
       <% @recipe.ingredients.each do |ingredient| %>
         <li>
-          <%= ingredient.name %> <%= link_to "(edit)", edit_recipe_ingredient_path(@recipe,ingredient)%> <%= link_to "(delete)", edit_recipe_ingredient_path(@recipe,ingredient)%>
+          <%= ingredient.name %> <%= link_to "(edit)", recipe_ingredient_path(@recipe,ingredient)%> <%= link_to "(delete)", edit_recipe_ingredient_path(@recipe,ingredient)%>
         </li>
       <%end%>
     </ul>
