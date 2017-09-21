@@ -24,10 +24,12 @@ background: repeating-linear-gradient(
   #f6ba52 10px,
   #ffd180 10px,
   #ffd180 20px
-
-  
-
 )}
+
+.notice {
+text-align: center;
+color: red;
+}
 
 #logo {
   text-align: center;
@@ -38,6 +40,8 @@ background: repeating-linear-gradient(
 
 a {
   text-decoration: none;
+  text-emphasis-color: green;
+  te
 }
 
 img {
@@ -47,38 +51,31 @@ img {
   width: 200px
 
 }
-/*div {
-    height: 200px;
-    width: 50%;
-    background-color: powderblue;
-/*}*/
+
 header {
     margin: 0;
     padding: 0;
   }
 
 h1 {
-    display: block;
-      margin: auto;
-      width: 40%;
-    width: 200px
-  }
+
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+}
 
   h2 {
-
-    display: left;
-      margin: auto;
-      width: 40%;
-    width: 200pxs
+    text-align: center;
+    text-decoration: green;
+    font-weight: bold;
+    font-size: 30px;
   }
 
   h3 {
 
-    display: left;
-      margin: auto;
-      width: 40%;
-    width: 200pxs
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
   }
-  #title {
-  font-size: 110px;
-}

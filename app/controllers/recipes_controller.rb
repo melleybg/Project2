@@ -10,7 +10,10 @@ class RecipesController < ApplicationController
 
   def create
    @recipe = Recipe.create(recipe_params)
+   if @recipe.save
+   flash[:notice] = "Thank you for your new GUAC!!!"
    redirect_to recipe_path(@recipe)
+ end
  end
 
   def new

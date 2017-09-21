@@ -11,7 +11,9 @@
   <body>
 <div id="logo"> <%= link_to "GUACAMOLE", root_path %> </div>
 
-
+<% flash.each do |type, message| %>
+  <p class="flash <%= type %>"><%= message %></p>
+<% end %>
 
     <%= yield %>
   </body>
