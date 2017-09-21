@@ -1,15 +1,15 @@
 
 <h2> Recipe: <%= link_to "(Edit)" , edit_recipe_path(@recipe) %><%= link_to "(Delete)" , edit_recipe_path(@recipe) %></h2>
-<h1><%= @recipe.name %></h1>
+<h2><%= @recipe.name %></h2>
 <h3><%= @recipe.detail %></h3>
 
 <img src="<%= @recipe.img_url %>"/>
 
-<h2>Ingredients: <%= link_to "(Add)" , new_recipe_ingredient_path(@recipe) %></h2>
+<h3>Ingredients: <%= link_to "(Add)" , new_recipe_ingredient_path(@recipe) %></h3>
     <ul>
       <% @recipe.ingredients.each do |ingredient| %>
         <li>
-          <%= ingredient.name %> <%= link_to "(edit)", recipe_ingredient_path(@recipe,ingredient)%> <%= link_to "(delete)", edit_recipe_ingredient_path(@recipe,ingredient)%>
+          <%= ingredient.detail %> <%= link_to "(edit)", edit_recipe_ingredient_path(@recipe, ingredient)%> <%= link_to "(delete)", edit_recipe_ingredient_path(@recipe,ingredient)%>
         </li>
       <%end%>
     </ul>

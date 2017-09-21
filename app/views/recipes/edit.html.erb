@@ -3,6 +3,9 @@
 <%= f.label :name %>
 <%= f.text_field :name %>
 <%= f.submit "Edit" %>
+<%= f.label :Details %>
+<%= f.text_field :detail %>
+<%= f.submit "Edit" %>
 <% end %>
 
 <%= form_for @recipe, method: :delete do |f| %>

@@ -16,25 +16,22 @@ class IngredientsController < ApplicationController
 def create
   @recipe = Recipe.find(params[:recipe_id])
   @recipe.ingredients.create!(ingredient_params)
-  redirect_to recipe_ingredients_path
-
+  redirect_to recipe_path(@recipe)
 end
 
-def show
-  @ingredient = Ingredient.find(params[:recipe_id])
-end
 
 def update
     @recipe = Recipe.find(params[:recipe_id])
     @ingredient = Ingredient.find(params[:id])
     @ingredient.update(ingredient_params)
-    redirect_to recipe_ingredient_path
+    redirect_to recipe_path(@recipe)
 end
 
 def destroy
-  @ingredient = Ingredient.find(params[:recipe_id])
+  @recipe = Recipe.find(params[:recipe_id])
+  @ingredient = Ingredient.find(params[:id])
   @ingredient.destroy
-  redirect_to recipe_ingredient_path
+  redirect_to recipe_path(@recipe)
 end
 
   private

@@ -21,7 +21,7 @@ classic = Ingredient.create!(name: "Classic", img_url:"https://greatist.com/site
 ¼ cup Cilantro
 ½ Lime (juiced)
 Sea Salt
-Black Pepper")
+Black Pepper", recipe_id: classic.id)
 
 bougie = Recipe.create!(name: "Bougie", img_url:"https://greatist.com/sites/default/files/styles/article_main/public/8.%20Spicy%20Apple%20Guacamole.jpg?itok=L4B5IW7-",detail:"Add avocados to a bowl and break apart with a fork.
 Add remaining ingredients to the bowl and stir to combine.
@@ -34,7 +34,7 @@ bougie = Ingredient.create!(name: "Bougie",img_url: "", detail:"2 avocados
 1/2 jalapeño, diced
 1/4 tsp. cumin
 salt to taste
-1/4 tsp. red pepper flakes (optional)")
+1/4 tsp. red pepper flakes (optional)", recipe_id: bougie.id)
 
 tropicana = Recipe.create!(name: "Tropicana", img_url:"https://greatist.com/sites/default/files/styles/article_main/public/6.%20Tropical%20Fruit%20Guacamole.jpeg?itok=jQGSAvbu",detail:"Roughly mash the avocados. Gently stir in the remaining ingredients.
 Serve with tortilla chips.")
@@ -47,7 +47,7 @@ tropicana = Ingredient.create!(name: "Tropicana", img_url: "", detail:"3 medium 
 1 tablespoons lime juice
 1 garlic clove, minced
 1 teaspoon salt
-½ teaspoon black pepper")
+½ teaspoon black pepper", recipe_id: tropicana.id)
 
 pomi = Recipe.create!(name: "Pomi", img_url:"https://greatist.com/sites/default/files/styles/article_main/public/10.%20Pomegranate%20Guacamole.jpg?itok=9KvmRoyt",detail:"Remove pit from the avocados and place flesh in a medium-sized bowl. Add lime juice and salt and pepper and mix well until mostly smooth, but some chunks still remain.
 Toast the pine nuts. Place pine nuts on a small skillet over low heat and toast until slightly browned, about 2-3 minutes. Make sure you are stirring constantly so they do not burn.

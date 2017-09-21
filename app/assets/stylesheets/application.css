@@ -25,11 +25,27 @@ background: repeating-linear-gradient(
   #ffd180 10px,
   #ffd180 20px
 
+  
+
 )}
 
-img {
+#logo {
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 50px;
+}
 
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+    margin: auto;
+    width: 40%;
   width: 200px
+
 }
 /*div {
     height: 200px;
@@ -40,3 +56,29 @@ header {
     margin: 0;
     padding: 0;
   }
+
+h1 {
+    display: block;
+      margin: auto;
+      width: 40%;
+    width: 200px
+  }
+
+  h2 {
+
+    display: left;
+      margin: auto;
+      width: 40%;
+    width: 200pxs
+  }
+
+  h3 {
+
+    display: left;
+      margin: auto;
+      width: 40%;
+    width: 200pxs
+  }
+  #title {
+  font-size: 110px;
+}

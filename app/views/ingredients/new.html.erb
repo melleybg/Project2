@@ -2,5 +2,8 @@
 <%= form_for [@recipe, @ingredient] do |f| %>
 <%= f.label :name %>
 <%= f.text_field :name %>
+
+<%= f.label :Details %>
+<%= f.text_field :detail %>
 <%= f.submit "Create" %>
 <% end %>

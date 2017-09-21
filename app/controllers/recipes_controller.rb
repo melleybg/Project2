@@ -30,7 +30,7 @@ def update
    def destroy
      @recipe = Recipe.find(params[:id])
      @recipe.destroy
-     redirect_to recipe_path
+     redirect_to recipes_path
    end
 
 private

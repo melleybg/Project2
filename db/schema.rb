@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 20170919155232) do
   create_table "ingredients", force: :cascade do |t|
     t.string "name"
     t.string "img_url"
-    t.string "detail"
+    t.text "detail"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "recipe_id"
@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(version: 20170919155232) do
   create_table "recipes", force: :cascade do |t|
     t.string "name"
     t.string "img_url"
-    t.string "detail"
+    t.text "detail"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
