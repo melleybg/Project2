@@ -4,41 +4,41 @@ class IngredientsController < ApplicationController
   end
 
   def edit
-    @recipe = Recipe.find(params[:id])
+    @recipe = Recipe.find(params[:recipe_id])
     @ingredient = @recipe.ingredients.find(params[:id])
   end
 
   def new
-    @recipe = Recipe.find(params[:id])
-    @ingredient = @recipe.ingredient.new
+    @recipe = Recipe.find(params[:recipe_id])
+    @ingredient = @recipe.ingredients.new
   end
 
 def create
-  @recipe = Recipe.find(params[:id])
+  @recipe = Recipe.find(params[:recipe_id])
   @recipe.ingredients.create!(ingredient_params)
   redirect_to recipe_ingredients_path
 
 end
 
 def show
-  @ingredient = Ingredient.all
+  @ingredient = Ingredient.find(params[:recipe_id])
 end
 
 def update
-    @recipe = Recipe.find(params[:id])
+    @recipe = Recipe.find(params[:recipe_id])
     @ingredient = Ingredient.find(params[:id])
     @ingredient.update(ingredient_params)
-    redirect_to recipe_ingredients_path
+    redirect_to recipe_ingredient_path
 end
 
 def destroy
-  @ingredient = Ingredient.find(params[:id])
+  @ingredient = Ingredient.find(params[:recipe_id])
   @ingredient.destroy
-  redirect_to recipe_ingredients_path
+  redirect_to recipe_ingredient_path
 end
 
   private
 def ingredient_params
-  params.requiew(:ingredient).permit(:name, :img_url, :detail)
+  params.require(:ingredient).permit(:name, :img_url, :detail)
 end
 end

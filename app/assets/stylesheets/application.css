@@ -13,16 +13,30 @@
  *= require_tree .
  *= require_self
  */
-    /*body {}*/
+body {
 
-/*background-image: url(http://vegrecipes.ru/wp-content/uploads/2013/07/bigstock-Guacamole-41148502.jpg);
-*/
-/*background-color: #FF0000*/
+/*background-image: url(http://vegrecipes.ru/wp-content/uploads/2013/07/bigstock-Guacamole-41148502.jpg);*/
 
-::-webkit-input-placeholder { /* Chrome */
-  color: red;
-  transition: opacity 250ms ease-in-out;
+/*background-color: 	#A9A9A9*/
+background: repeating-linear-gradient(
+  to right,
+  #f6ba52,
+  #f6ba52 10px,
+  #ffd180 10px,
+  #ffd180 20px
+
+)}
+
+img {
+
+  width: 200px
 }
-:focus::-webkit-input-placeholder {
-  opacity: 0.5;
-}
+/*div {
+    height: 200px;
+    width: 50%;
+    background-color: powderblue;
+/*}*/
+header {
+    margin: 0;
+    padding: 0;
+  }

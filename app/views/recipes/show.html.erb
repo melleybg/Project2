@@ -1,10 +1,11 @@
 
-<h2>recipe: <%= link_to "(Edit)" , edit_recipe_path(@recipe) %><%= link_to "(Delete)" , edit_recipe_path(@recipe) %></h2>
+<h2> Recipe: <%= link_to "(Edit)" , edit_recipe_path(@recipe) %><%= link_to "(Delete)" , edit_recipe_path(@recipe) %></h2>
 <h1><%= @recipe.name %></h1>
+<h3><%= @recipe.detail %></h3>
 
 <img src="<%= @recipe.img_url %>"/>
 
-<h2>Ingredient: <%= link_to "(Add)" , new_recipe_ingredient_path(@recipe) %></h2>
+<h2>Ingredients: <%= link_to "(Add)" , new_recipe_ingredient_path(@recipe) %></h2>
     <ul>
       <% @recipe.ingredients.each do |ingredient| %>
         <li>
@@ -12,6 +13,3 @@
         </li>
       <%end%>
     </ul>
-    <body>
-      <input placeholder="Search">
-    </body>
