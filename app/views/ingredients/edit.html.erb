@@ -1,12 +1,15 @@
-<h2> Fix Guac Ingredient </h2>
+<h2>
+  Fix Guac Ingredient
+</h2>
+
 <%= form_for [@recipe,@ingredient] do |f| %>
-<%= f.label :Name %>
-<%= f.text_field :name %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
 
-<%= f.label :Details %>
-<%= f.text_field :detail %>
+  <%= f.label :details %>
+  <%= f.text_field :detail %>
 
-<%= f.submit "Edit" %>
+  <%= f.submit "Edit" %>
 <% end %>
 
 <%= form_for [@recipe,@ingredient], method: :delete do |f| %>

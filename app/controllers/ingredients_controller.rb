@@ -1,5 +1,5 @@
 class IngredientsController < ApplicationController
-  def index
+  def index # not sure that youre using this method anyways
     @ingredients = Ingredient.all
   end
 
@@ -13,29 +13,29 @@ class IngredientsController < ApplicationController
     @ingredient = @recipe.ingredients.new
   end
 
-def create
-  @recipe = Recipe.find(params[:recipe_id])
-  @recipe.ingredients.create!(ingredient_params)
-  redirect_to recipe_path(@recipe)
-end
+  def create
+    @recipe = Recipe.find(params[:recipe_id])
+    @recipe.ingredients.create!(ingredient_params)
+    redirect_to recipe_path(@recipe)
+  end
 
-
-def update
+  def update
     @recipe = Recipe.find(params[:recipe_id])
     @ingredient = Ingredient.find(params[:id])
     @ingredient.update(ingredient_params)
     redirect_to recipe_path(@recipe)
-end
+  end
 
-def destroy
-  @recipe = Recipe.find(params[:recipe_id])
-  @ingredient = Ingredient.find(params[:id])
-  @ingredient.destroy
-  redirect_to recipe_path(@recipe)
-end
+  def destroy
+    @recipe = Recipe.find(params[:recipe_id])
+    @ingredient = Ingredient.find(params[:id])
+    @ingredient.destroy
+    redirect_to recipe_path(@recipe)
+  end
 
   private
-def ingredient_params
-  params.require(:ingredient).permit(:name, :img_url, :detail)
-end
+
+  def ingredient_params
+    params.require(:ingredient).permit(:name, :img_url, :detail)
+  end
 end
