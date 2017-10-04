@@ -15,6 +15,11 @@ ActiveRecord::Schema.define(version: 20170919155232) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+
+  # I would add a new migration to add quantity to ingredients, since there an
+  # ingredient is always going to be in a certain amount or quantity
+
+
   create_table "ingredients", force: :cascade do |t|
     t.string "name"
     t.string "img_url"
@@ -32,6 +37,9 @@ ActiveRecord::Schema.define(version: 20170919155232) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+
+  # consider adding a new model for Dish so you could add more than guacamole
+  # recipes, which is currently hard-coded in your layout
 
   add_foreign_key "ingredients", "recipes"
 end

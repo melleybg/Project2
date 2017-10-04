@@ -1,34 +1,29 @@
 /*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+* This is a manifest file that'll be compiled into application.css, which will include all the files
+* listed below.
+*
+* Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+* vendor/assets/stylesheets directory can be referenced here using a relative path.
+*
+* You're free to add application-wide styles to this file and they'll appear at the bottom of the
+* compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+* files in this directory. Styles in this file should be added after the last require_* statement.
+* It is generally better to create a new file per style scope.
+*
+*= require_tree .
+*= require_self
+*/
+
+/* Ident your code properly!!! */
+/* Validate your CSS, also. http://www.css-validator.org/ */
+
 body {
-
-/*background-image: url(http://vegrecipes.ru/wp-content/uploads/2013/07/bigstock-Guacamole-41148502.jpg);*/
-
-/*background-color: 	#A9A9A9*/
-background: repeating-linear-gradient(
-  to right,
-  #f6ba52,
-  #f6ba52 10px,
-  #ffd180 10px,
-  #ffd180 20px
-)}
+  background: repeating-linear-gradient( to right, #f6ba52, #f6ba52 10px, #ffd180 10px, #ffd180 20px) /* Invalid CSS, missing ; */
+}
 
 .notice {
-text-align: center;
-color: red;
+  text-align: center;
+  color: red;
 }
 
 #logo {
@@ -41,41 +36,38 @@ color: red;
 a {
   text-decoration: none;
   text-emphasis-color: green;
-  te
+  te /* Invalid CSS, invalid declaration */
 }
 
 img {
   display: block;
-    margin: auto;
-    width: 40%;
-  width: 200px
-
+  margin: auto;
+  width: 40%;
+  width: 200px /* Invalid CSS, missing ; */
 }
 
 header {
-    margin: 0;
-    padding: 0;
-  }
+  margin: 0;
+  padding: 0;
+}
 
 h1 {
-
   text-align: center;
   text-decoration: none;
   font-weight: bold;
   font-size: 20px;
 }
 
-  h2 {
-    text-align: center;
-    text-decoration: green;
-    font-weight: bold;
-    font-size: 30px;
-  }
+h2 {
+  text-align: center;
+  text-decoration: green;
+  font-weight: bold;
+  font-size: 30px;
+}
 
-  h3 {
-
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 20px;
-  }
+h3 {
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+}
